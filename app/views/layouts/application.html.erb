@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-8 menu">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link active" href="/"> Welcome </a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio"> Portfolio </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> Blog </a></li>
+              <li class="nav-item"><a class="nav-link" href="about"> About </a></li>
+              <li class="nav-item"><a class="nav-link" href="contact"> Contact </a></li>
+            </ul>
+          </div>
+          <div class="col-4 name">
+            <h2>Maksym Danko</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <%= yield %>
+
+    <footer>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col copyright">
+            <p>&copy; 2019 Maksym Danko</p>
+          </div>
+          <div class="col">
+            <ul class="nav social_media">
+              <li class="nav-item">
+                <a class="nav-link github" href="#"><img src="./assets/github.svg" alt="github" /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link gmail" href="mailto:dankomaksym@gmail.com?"><img src="/assets/gmail.svg" alt="gmail" /></a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link skype" href="https://join.skype.com/invite/pvp3K1fSBKvz"><img src="/assets/skype.svg" alt="skype" /></a>
+              </li>            
+            </ul>
+          </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

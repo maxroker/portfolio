@@ -1,0 +1,163 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  background: #272b28;
+  color: #fff;
+  font-family: 'Roboto', serif;
+  height: 100%;
+  width: 100%;
+}
+
+
+/*    HEADER    */
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header h2 {
+  float: right;
+}
+
+header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav ul {
+  list-style: none;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+.nav ul li {
+  display: inline-block;
+  font-weight: 300;
+}
+
+
+/*.col-8 {
+	background-color: violet;
+}
+
+.col-4 {
+	background-color: lightgreen;
+}*/
+
+.name {
+	
+}
+
+/*     MAIN     */
+
+.home .jumbotron {
+  background-image: url('rinck-content-studio-SHRWKreuzbM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-color: initial;
+  min-height: 800px;
+  margin: 0;
+}
+
+
+.jumbotron h2 {
+	background-color: #272b28;
+	width: 330px;
+	float: right;
+	opacity: 0.9;
+  margin-top: 100px;
+}
+
+.jumbotron .col {
+  display: block;
+
+}
+
+.jumbotron .btn {
+  background: #272b28;
+  display: block;
+  width: 330px;
+  padding: 6px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background 1s;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+  color: #61b7ff;
+}
+
+
+.right {
+  float: right;
+}
+
+
+/*    FOOTER    */
+.social_media {
+  float: right;
+}
+
+footer .container-fluid {
+ margin: 10px 0;
+}
+
+footer .nav-item {
+  height: 70px;
+  width: 70px;
+}
+
+
+/**********    
+  MEDIA QUERIES    
+**********/
+
+@media screen and (max-width: 900px) {
+  /*    HEADER    */
+  header .nav-item {
+    display: block;
+    width: 100%;
+  }
+
+  header .nav-link {
+    padding: 0;
+  }
+
+  .home .jumbotron .out {
+    display: block;
+  }
+
+  .home .jumbotron {
+    background-image: url('jonathan-borba.jpg');
+  }
+
+
+    
