@@ -1,0 +1,13 @@
+<div class="container-fluid portfolio">
+	<div class="row">
+		<% @works.each do |work| %>
+			<div class="col-4">
+			<a href="<%= work.hosting %>">
+				<h2><%= work.name %> </h2>
+			</a>
+			<img src="<%= work.picture %>" >
+			<p><%= work.description %></p>
+			</div>
+		<% end %>
+	</div>
+</div>

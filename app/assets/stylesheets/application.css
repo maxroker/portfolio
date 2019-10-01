@@ -136,6 +136,21 @@ footer .nav-item {
 }
 
 
+/*    PORTFOLIO    */
+
+.portfolio h2 {
+  margin-top: 50px;
+}
+
+.portfolio p {
+  margin-top: 10px;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+
 /**********    
   MEDIA QUERIES    
 **********/
