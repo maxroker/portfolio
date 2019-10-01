@@ -151,6 +151,57 @@ footer .nav-item {
 }
 
 
+/*    ABOUT    */
+
+.about {
+  margin-top: 50px;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about p {
+  margin-top: 10px;
+}
+
+
+/*    CONTACT    */
+
+.contact {
+  background-image: url('rinck-content-studio-SHRWKreuzbM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: initial;
+  min-height: 800px;
+  margin: 0;
+}
+
+.contact {
+  min-width: 400px;
+  align-content: center;
+}
+
+.contact .col {
+  background-color: #272b28;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 100px auto;
+  
+}
+
+.contact h2 { 
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contact p {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center; 
+}
+
+
 /**********    
   MEDIA QUERIES    
 **********/
