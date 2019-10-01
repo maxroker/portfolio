@@ -35,6 +35,7 @@ body {
 header {
   position: relative;
   width: 100%;
+  margin: 15px auto;
 }
 
 header h2 {
@@ -60,64 +61,51 @@ header a {
 }
 
 
-/*.col-8 {
-	background-color: violet;
-}
+/*     Welcome     */
 
-.col-4 {
-	background-color: lightgreen;
-}*/
-
-.name {
-	
-}
-
-/*     MAIN     */
-
-.home .jumbotron {
-  background-image: url('rinck-content-studio-SHRWKreuzbM-unsplash.jpg');
+.home {
+  background-image: url('https://images.unsplash.com/photo-1569913206567-988348c4d945?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'), url('rinck-content.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  
-  background-color: initial;
-  min-height: 800px;
-  margin: 0;
+  min-height: 768px;
 }
 
+.home .col {
+  margin-top: 50px;
+  margin-left: 20em;
+}
 
-.jumbotron h2 {
+.home h2 {
 	background-color: #272b28;
-	width: 330px;
-	float: right;
-	opacity: 0.9;
-  margin-top: 100px;
+  opacity: 0.9;
+	width: 390px;
+  padding: 30px;
 }
 
-.jumbotron .col {
+.home .btn {
+  background-color: #272b28;
+  color: white;
+  opacity: 0.9;
   display: block;
-
-}
-
-.jumbotron .btn {
-  background: #272b28;
-  display: block;
-  width: 330px;
+  width: 390px;
   padding: 6px 20px;
   font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
-  transition: background 1s;
-  opacity: 0.9;
+  transition: background 1s; 
 }
 
-.btn:hover {
+.home .btn:hover {
+  color: #61b7ff;
   opacity: 1;
+}
+
+a {
   color: #61b7ff;
 }
 
-
-.right {
-  float: right;
+a:hover {
+  color: #61b7ff;
 }
 
 
@@ -139,7 +127,7 @@ footer .nav-item {
 /*    PORTFOLIO    */
 
 .portfolio h2 {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .portfolio p {
@@ -154,7 +142,7 @@ footer .nav-item {
 /*    ABOUT    */
 
 .about {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .about img {
@@ -169,7 +157,7 @@ footer .nav-item {
 /*    CONTACT    */
 
 .contact {
-  background-image: url('rinck-content-studio-SHRWKreuzbM-unsplash.jpg');
+  background-image: url('rinck-content.jpg');
   background-repeat: no-repeat;
   background-size: cover; 
   background-color: initial;
@@ -217,13 +205,13 @@ footer .nav-item {
     padding: 0;
   }
 
-  .home .jumbotron .out {
-    display: block;
-  }
-
-  .home .jumbotron {
+  .home {
     background-image: url('jonathan-borba.jpg');
   }
 
+  .home .col {
+    margin-left: 2em;
+  }
+}
 
-    
+   
