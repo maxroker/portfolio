@@ -14,16 +14,17 @@
   </head>
 
   <body>
+
     <header>
       <div class="container-fluid">
         <div class="row">
           <div class="col-8 menu">
             <ul class="nav">
               <li class="nav-item"><a class="nav-link active" href="/"> Welcome </a></li>
-              <li class="nav-item"><a class="nav-link" href="portfolio"> Portfolio </a></li>
-              <li class="nav-item"><a class="nav-link" href="http://stark-sands-74754.herokuapp.com"> Blog </a></li>
-              <li class="nav-item"><a class="nav-link" href="about"> About </a></li>
-              <li class="nav-item"><a class="nav-link" href="contact"> Contact </a></li>
+              <li class="nav-item"><a class="nav-link" href="/portfolio"> Portfolio </a></li>
+              <li class="nav-item"><a class="nav-link" href="/blog"> Blog </a></li>
+              <li class="nav-item"><a class="nav-link" href="/about"> About </a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact"> Contact </a></li>
             </ul>
           </div>
           <div class="col-4 name">
@@ -33,10 +34,11 @@
       </div>
     </header>
 
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
 
     <footer>
-
       <div class="container-fluid">
         <div class="row">
           <div class="col copyright">
@@ -45,7 +47,7 @@
           <div class="col">
             <ul class="nav social_media">
               <li class="nav-item">
-                <a class="nav-link github" href="#"><img src="./assets/github.svg" alt="github" /></a>
+                <a class="nav-link github" href="https://github.com/maxroker/"><img src="/assets/github.svg" alt="github" /></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link gmail" href="mailto:dankomaksym@gmail.com?"><img src="/assets/gmail.svg" alt="gmail" /></a>

@@ -1,0 +1,36 @@
+<div class="container blog">
+	<div class="row">
+		<div class="col ">
+
+			<div class="article">
+				<h2><%= @article.title %></h2>		
+				<p><%= simple_format(@article.text) %></p>
+				<p class="right"><%= @article.created_at.to_date %></p>
+				<%= link_to 'Back to articles', blog_path %>
+			</div>
+
+			<div class="comments">
+				<h3>Comments section:</h3>
+				<% @article.comments.each do |comment| %>
+					<% if comment.article != false %>
+						<h4><span class="white">Author:</span> <%= comment.author %></h4>
+					    <p><%= simple_format(comment.text) %></p>
+					    <%= link_to 'Delete comment', [comment.article, comment],
+					                method: :delete,
+					                data: { confirm: 'Are you sure?' } %>
+					<% end %>
+				<% end %>
+			</div>	 
+
+			<div class="comment">
+				<h3>Make your comment:</h3>
+				<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
+				<p><%= form.text_field :author, :placeholder => "Name", :class =>"textfield", :maxlength=>"100" %></p>
+				<p><%= form.text_area :text, :placeholder => "Comment", :size=>"50", :maxlength=>"1024" %></p>
+				<p><%= form.submit "Publish", :class => "btn" %></p>
+				<% end %>
+			</div>
+
+		</div>
+	</div>
+</div>

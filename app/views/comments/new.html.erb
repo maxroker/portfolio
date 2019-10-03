@@ -1,0 +1,17 @@
+<div class="container blog">
+	<div class="row">
+		<div class="col ">
+
+			<% form_for(@comment) do |f| %>
+
+			<%= f.text_field :author %>
+			
+			<%= f.text_area :text %>
+
+			<%= f.submit, :class => "btn" %>
+			
+			<% end %>
+
+		</div>
+	</div>
+</div>

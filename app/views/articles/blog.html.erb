@@ -1,0 +1,17 @@
+<div class="container blog">
+	<div class="row">
+		<div class="col ">
+
+			<% @articles.each do |article| %>
+
+			<h2><%= article.title %></h2>
+			
+			<p><%= simple_format(truncate(article.text, :length => 180)) %></p>
+
+			<%= link_to "Show full article", article %>
+			<p class="right"><%= article.created_at.to_date %></p>
+			<% end %>
+
+		</div>
+	</div>
+</div>
