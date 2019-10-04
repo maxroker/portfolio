@@ -1,7 +1,7 @@
 <div class="container-fluid portfolio">
 	<div class="row">
 		<% @works.each do |work| %>
-			<div class="col-xs-12 col-md-6 col-lg-4 portrait">
+			<div class="col-xs-12 col-md-6 col-lg-4">
 				<a href="<%= work.hosting %>">
 					<h2><%= work.name %> </h2>
 					<%= image_tag work.picture %>
