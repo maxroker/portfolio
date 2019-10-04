@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
 
-http_basic_authenticate_with name: "admin", password: "123", only: :destroy
+http_basic_authenticate_with name: "admin", password: "admin", only: :destroy
 
 	def new
 		@comment = Comment.new
