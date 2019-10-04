@@ -60,7 +60,8 @@ header a {
 /*     Welcome     */
 
 .home {
-  background-image: url('https://images.unsplash.com/photo-1569913206567-988348c4d945?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'), url('rinck-content.jpg');
+  background-image: url('https://images.unsplash.com/photo-1569913206567-988348c4d945?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'),
+                    url(<%= asset_path('rinck-content.jpg') %>);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 780px;
@@ -226,7 +227,7 @@ footer p {
 /*    CONTACT    */
 
 .contact {
-  background-image: url('rinck-content.jpg');
+  background-image: url(<%= asset_path('rinck-content.jpg') %>);
   background-repeat: no-repeat;
   background-size: cover; 
   background-color: initial;
