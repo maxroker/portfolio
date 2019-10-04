@@ -9,27 +9,27 @@
 
 Work.create(
 	name: "NewStand", 
-	picture: "/assets/newstand.jpg", 
+	picture: "newstand.jpg", 
 	description: "News related project", 
 	hosting: "https://stark-sands-74754.herokuapp.com/")
 Work.create(
 	name: "Bass", 
-	picture: "/assets/bass.jpg", 
+	picture: "bass.jpg", 
 	description: "Online music library", 
 	hosting: "https://quiet-falls-10005.herokuapp.com/")
 Work.create(
 	name: "Adventure", 
-	picture: "/assets/adventure.jpg", 
+	picture: "adventure.jpg", 
 	description: "Travel guide", 
 	hosting: "https://secure-crag-12360.herokuapp.com/")
 Work.create(
 	name: "Bookmarks", 
-	picture: "/assets/bookmarks.jpg", 
+	picture: "bookmarks.jpg", 
 	description: "Books ranking service", 
 	hosting: "https://nameless-mesa-55045.herokuapp.com/")
 Work.create(
 	name: "Authentication", 
-	picture: "/assets/authentication.jpg", 
+	picture: "authentication.jpg", 
 	description: "Private photo album collection", 
 	hosting: "https://sleepy-sierra-45832.herokuapp.com")
 
