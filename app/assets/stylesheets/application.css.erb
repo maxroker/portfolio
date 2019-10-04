@@ -259,9 +259,14 @@ footer p {
 }
 
 
+
+
 /**********    
   MEDIA QUERIES    
 **********/
+
+
+
 
 @media screen and (max-width: 900px) {
   /*    HEADER    */
@@ -287,16 +292,38 @@ footer p {
   }
 }
 
+
+
 @media (orientation: portrait){
-   .about .col-md-6{
-       width: 100%;
-   }
+  .about {
+    max-width: 90%;
+  }
 
-   .portfolio .col-md-6{
-       width: 100%;
-   }
+  .about .row {
+    flex-direction: column;
+    align-items: center;
+  }
 
-   .portfolio .col-lg-4{
-       width: 100%;
-   }
+  .about .col-md-6 {
+    max-width: 100%;
+  }
+
+
+
+  .portfolio {
+    max-width: 90%;
+  }
+
+  .portfolio .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio .col-md-6{
+    max-width: 100%;
+  }
+
+  .portfolio .col-lg-4{
+    max-width: 100%;
+  }
 }
